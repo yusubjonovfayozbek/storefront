@@ -125,10 +125,10 @@ const checkoutLinesAddDocument = toTypedDocument<CheckoutLinesAddMutation, Check
 	CheckoutLinesAddDocument,
 );
 
-const checkoutLineDeleteDocument = toTypedDocument<
-	CheckoutLineDeleteMutation,
-	CheckoutLineDeleteMutationVariables
->(CheckoutLineDeleteDocument);
+const checkoutLinesDeleteDocument = toTypedDocument<
+	CheckoutLinesDeleteMutation,
+	CheckoutLinesDeleteMutationVariables
+>(CheckoutLinesDeleteDocument);
 
 const checkoutDeliveryMethodUpdateDocument = toTypedDocument<
 	CheckoutDeliveryMethodUpdateMutation,
