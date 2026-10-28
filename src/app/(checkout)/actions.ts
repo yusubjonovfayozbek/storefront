@@ -646,10 +646,10 @@ export async function getAddressValidationRules(
 }
 
 export async function removeCheckoutLine(checkoutId: string, lineId: string): Promise<CheckoutActionResult> {
-	const result = await mutate(checkoutLineDeleteDocument, {
+	const result = await mutate(checkoutLinesDeleteDocument, {
 		variables: {
 			checkoutId,
-			lineId,
+			lineIds: [lineId],
 			languageCode: await checkoutGraphqlLanguageCode(),
 		},
 	});
