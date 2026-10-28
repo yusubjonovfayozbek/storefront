@@ -217,7 +217,7 @@ mutation checkoutLinesUpdate(
 	}
 }
 
-mutation checkoutLinesDelete($checkoutId: ID!, $lineId: ID, $languageCode: LanguageCodeEnum!) {
+mutation checkoutLinesDelete($checkoutId: ID!, $lineIds: [ID!]!, $languageCode: LanguageCodeEnum!) {
 	checkoutLinesDelete(id: $checkoutId, linesIds: $lineIds) {
 		errors {
 			...CheckoutErrorFragment
